@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Signup.css";
 
 const Signup = () => {
@@ -13,9 +14,27 @@ const Signup = () => {
     const [specialization, setSpecialization] = useState(""); // For doctors
     const [insurance, setInsurance] = useState(""); // For patients
 
+    const navigate = useNavigate();
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle signup logic here
+        if (role === "patient") {
+            // Redirect to symptom selection page if the role is patient
+            navigate("/symptom-selection")
+        } else {
+            // Handle signup logic for doctors
+            console.log("Doctor Signup Details:", {
+                name,
+                age,
+                gender,
+                city,
+                phoneNumber,
+                emergencyNumber,
+                email,
+                specialization
+            });
+            alert("Doctor signup successful!");
+        }
     };
 
     return (
