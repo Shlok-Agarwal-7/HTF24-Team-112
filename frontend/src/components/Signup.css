@@ -1,0 +1,92 @@
+.signup-container {
+    max-width: 400px; /* Max width for the signup form */
+    margin: 50px auto; /* Center the form */
+    padding: 30px; /* Add padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    background-color: #ffffff; /* White background for contrast */
+    transition: box-shadow 0.3s; /* Smooth shadow transition */
+}
+
+.signup-container:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #007bff; /* Bootstrap primary color */
+    text-align: center; /* Center align the header */
+    font-size: 32px; /* Larger font size for the header */
+}
+
+.role-selection {
+    margin: 20px 0;
+    text-align: center; /* Center the role selection */
+}
+
+.role-selection label {
+    margin-right: 15px; /* Space between radio buttons */
+    font-weight: 600; /* Make labels bold */
+}
+
+.form {
+    display: flex;
+    flex-direction: column; /* Stack form elements */
+    align-items: center; /* Center form elements */
+    margin-top: 20px; /* Space above the form */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+label {
+    display: block; /* Block for proper alignment */
+    margin-bottom: 5px;
+    font-weight: bold; /* Make labels bold */
+    color: #495057; /* Dark color for better readability */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+select {
+    width: 100%; /* Full width for inputs */
+    padding: 12px; /* Add padding */
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 6px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in total width */
+    transition: border-color 0.3s; /* Smooth border transition */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #007bff; /* Bootstrap primary color on focus */
+    outline: none; /* Remove outline */
+}
+
+button {
+    padding: 12px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    color: #6c757d; /* Bootstrap muted color */
+}
